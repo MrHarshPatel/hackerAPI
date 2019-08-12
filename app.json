@@ -143,5 +143,5 @@
 			"description": "CLIENT_X509_CERT_URL. Must be set.",
 			"required": true
 		}
-	},
-	
+	}
+}	
