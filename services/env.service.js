@@ -4,10 +4,8 @@ const fs = require("fs");
 const path = require("path");
 const Logger = require("./logger.service");
 module.exports = {
-    load: function (path) {
-        const result = dotenv.config({
-            path: path
-        });
+    load: function () {
+        const result = dotenv.config();
         createGCPFile();
         return result;
     },

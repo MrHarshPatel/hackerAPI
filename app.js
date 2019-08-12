@@ -11,7 +11,7 @@ const Services = {
     env: require("./services/env.service")
 };
 
-const envLoadResult = Services.env.load(path.join(__dirname, "./.env"));
+const envLoadResult = Services.env.load();
 if (envLoadResult.error) {
     Services.log.error(envLoadResult.error);
 }
