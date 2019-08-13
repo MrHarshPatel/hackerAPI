@@ -17,7 +17,8 @@
        	"test": "DEBUG=hackboard:* NODE_ENV=test mocha --reporter spec tests/**.js --exit",
     	"seed": "NODE_ENV=development node ./seed/index.js",
      	"docs": "apidoc -i ./routes -o ./docs/api/"
-     },
+    },
+    "success_url": "/",
 	"env": {
 		"PORT": {
 			"description": "Port for API.",
@@ -38,11 +39,11 @@
            	"description": "IP address for deployment frontend, defaults to app.mchacks.ca",
 			"value": "app.mchacks.ca",
            	"required": true
-         },
+        },
 		"DB_ADDRESS_DEPLOY": {
           	"description": "Address for deployment database. Must be set.",
          	"required": true
-         },
+        },
 		"DB_USER_DEPLOY": {
 			"description": "Username for deployment database. Must be set.",
 			"required": true
@@ -54,7 +55,7 @@
 		"DB_ADDRESS_DEV": {
 			"description": "Address for development database. Must be set.",
 			"required": true
-		 },
+		},
 		"DB_USER_DEV": {
 			"description": "Username for development database. Must be set.",
 			"required": true
@@ -66,7 +67,7 @@
 		"DB_ADDRESS_TEST": {
           	"description": "Address for test database. Must be set.",
          	"required": true
-         },
+        },
 		"DB_USER_TEST": {
 			"description": "Username for test database. Must be set.",
 			"required": true
